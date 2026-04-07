@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#1A1815"/>
+      <stop offset="100%" stop-color="#2A2420"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#C4684F" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C4684F" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="100" height="100" rx="22" ry="22" fill="url(#bg)"/>
+
+  <!-- Subtle warm glow top-left -->
+  <rect width="100" height="100" rx="22" ry="22" fill="url(#glow)"/>
+
+  <!-- Thin border -->
+  <rect width="100" height="100" rx="22" ry="22"
+        fill="none" stroke="rgba(196,104,79,0.28)" stroke-width="1.5"/>
+
+  <!-- CG text — Lora-style serif rendered as paths for portability -->
+  <!-- Using Georgia as closest embedded-safe serif with italic weight -->
+  <text
+    x="50" y="66"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="46"
+    font-weight="bold"
+    font-style="italic"
+    fill="#C4684F"
+    text-anchor="middle"
+    letter-spacing="-1"
+  >CG</text>
+
+  <!-- Tiny underline accent -->
+  <line x1="28" y1="75" x2="72" y2="75"
+        stroke="#C4684F" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+</svg>
